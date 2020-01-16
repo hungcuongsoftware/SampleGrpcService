@@ -4,16 +4,16 @@
 
 # gRPC services
 The sameplae have 4 method types of gRPC service, which have been defined on proto file
-- Unary call
+- Unary call: 
   rpc GetProductById (GetProductByIdRequest) returns (GetPrductByIdResponse);
 
-- Server streaming call
+- Server streaming call: 
   rpc GetProductListing (GetProductListingRequest) returns (stream Product);
   
-- Client streaming call
+- Client streaming call: 
   rpc BulkInsertProduct (stream Product) returns (BulkInsertProductResponse);
   
-- Duplex streaming call
+- Duplex streaming call: 
   rpc BulkUpdateProduct (stream Product) returns (stream Product);
 
 # gRPC testing tool
